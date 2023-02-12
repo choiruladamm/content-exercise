@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Button Interaction</title>
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .btn {
+        margin: 2rem;
+        position: relative;
+        width: 70px;
+        height: 30px;
+        font-size: 10px;
+        background-image: linear-gradient(45deg, #141E30 0%, #243B55 100%);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: width 0.5s;
+        border-radius: 0.5s;
+      }
+
+      .btn * {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.5s;
+      }
+
+      .btn i {
+        opacity: 0;
+      }
+
+      .btn:focus {
+        width: 30px;
+        background-image: linear-gradient(45deg, #00C9FF 0%, #92FE9D 100%);
+        border-radius: 50px;
+      }
+
+      .btn:focus span {
+        opacity: 0;
+      }
+
+      .btn:focus i {
+        opacity: 1;
+        transition-delay: 0.5s;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/ede4a740ec.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">
+        <span>Submit</span>
+        <i class="fa-solid fa-check"></i>
+      </button>
+    </div>
+  </body>
+</html>
