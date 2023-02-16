@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sing Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-card">
+      <img src="https://source.unsplash.com/400x400?person" />
+      <h2>Sign Up</h2>
+      <h3>Create your account</h3>
+      <form class="login-form">
+        <div class="username">
+          <input
+            autocomplete="off"
+            spellcheck="false"
+            class="control"
+            type="email"
+            placeholder="Email"
+            value="axell@gmail.com"
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+        <input
+          spellcheck="false"
+          class="control"
+          id="password"
+          type="password"
+          placeholder="Password"
+          onkeyup="handleChange()"
+        />
+        <div id="bars">
+          <div></div>
+        </div>
+        <div class="strength" id="strength"></div>
+        <button class="control" type="button">SIGN UP</button>
+      </form>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
